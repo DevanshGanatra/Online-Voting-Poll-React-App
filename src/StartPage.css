@@ -1,0 +1,176 @@
+.Content {
+    width: 100%;
+    min-height: 100vh;
+    max-height: max-content;
+    background: yellowgreen;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.my-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.my-container div {
+    background: whitesmoke;
+    border-radius: 30px;
+    width: 100%; /* Full width for mobile */
+    max-width: 650px; /* Max width for larger screens */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+input[type="text"] {
+    background-color: whitesmoke;
+    width: 70%;
+    min-height: 4vh;
+    line-height: 4vh;
+    margin-bottom: 15px;
+    font-size: x-large;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.addOptions input[type="text"] {
+    background-color: whitesmoke;
+    width: 50%;
+    margin-top: 15px;
+    margin-left: 2%;
+    min-height: 2vh;
+    font-size: x-large;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px; /* Adjust padding for a smaller button */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px 0; /* Space between buttons */
+    font-size: medium; /* Adjust font size for better visibility */
+}
+
+.addOptions {
+    display: flex; /* Ensure input and button are aligned */
+    align-items: center; /* Align vertically */
+}
+
+.addOptions button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px; /* Keep the button small */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px; /* Adjust left margin */
+    height: fit-content; /* Adjust height to fit content */
+}
+
+.option-item {
+    background-color: lightblue; /* Color for option item */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0; /* Space between options */
+    display: flex;
+    justify-content: space-between; /* Align edit/delete buttons to the right */
+    align-items: center;
+    height: 3vh;
+}
+
+.editing {
+    display: flex;
+    flex-direction: row;
+}
+
+span button {
+    height: 1%;
+    width: fit-content;
+    padding: 0;
+    background-color: white;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 680px) {
+    .Content {
+        flex-direction: column;
+        padding: 20px;
+        height: auto; /* Adjust height for mobile */
+    }
+
+    .my-container {
+        width: 90%; /* Adjust container width for mobile */
+        margin-top: 5%;
+    }
+
+    .my-container div {
+        width: 100%; /* Full-width div for mobile */
+    }
+
+    input[type="text"] {
+        width: 100%; /* Full-width inputs on mobile */
+        height: 4vh;
+    }
+
+    button {
+        width: auto; /* Maintain manageable button size */
+        margin: 10px 0; /* Space between buttons */
+        padding: 8px 12px; /* Adjust padding for smaller screens */
+        font-size: medium; /* Adjust font size */
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    label {
+        font-size: large; /* Slightly smaller font size for mobile */
+    }
+
+    .addOptions input[type="text"] {
+        min-height: 4vh;
+    }
+
+    .option-item {
+        min-height: 5vh;
+        width: 100%;
+    }
+}

@@ -1,0 +1,130 @@
+.votingPgBody {
+  min-height: 100vh;
+  max-height: max-content;
+  width: 100%;
+  background-color: #1a1a1a;
+  display: flex; /* Use flex to center the content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.voting-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #1a1a1a; /* Dark background */
+  border-radius: 8px;
+  max-width: 90%; /* Make the max-width a percentage for responsiveness */
+  width: 600px; /* Set a fixed width for larger screens */
+  margin: auto;
+  color: #fff; /* White text */
+}
+
+.container {
+  background-color: #333; /* Dark container */
+  padding: 20px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); /* Dark shadow */
+}
+
+h2 {
+  text-align: center;
+}
+
+.VotingTitle {
+  color: whitesmoke;
+}
+
+.options-list {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column; /* Stack options vertically */
+}
+
+.option {
+  background-color: #444; /* Darker option background */
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative; /* For progress bar */
+}
+
+.option p {
+  font-size: xx-large;
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Show ellipsis */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.option:hover {
+  background-color: #555; /* Slightly lighter on hover */
+}
+
+.selected {
+  background-color: #007bff; /* Light blue for selected option */
+}
+
+.vote-progress {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #00ff00; /* Green bar */
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: width 0.5s ease; /* Smooth progress */
+}
+
+.vote-count {
+  font-size: 0.9em;
+  color: #ccc; /* Lighter text */
+}
+
+.confirmation {
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .voting-page {
+      max-width: 95%; /* Use more width on smaller screens */
+  }
+
+  .option {
+      font-size: 1.5em; /* Increase font size for better readability */
+  }
+
+  .option p {
+      font-size: 1.2em; /* Increase font size for option text */
+      white-space: normal; /* Allow wrapping on smaller screens */
+  }
+
+  .progress-bar {
+      height: 8px; /* Slightly smaller progress bar */
+  }
+
+  button {
+      width: 100%; /* Make buttons full width on mobile */
+      margin: 5px 0; /* Add vertical margin */
+  }
+}

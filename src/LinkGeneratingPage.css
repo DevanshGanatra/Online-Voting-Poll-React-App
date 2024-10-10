@@ -1,0 +1,300 @@
+/* Container Styles */
+.Linkcontainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading Styles */
+h2 {
+  text-align: center;
+  color: whitesmoke;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #343a40;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.table th {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
+
+.table td {
+  text-align: center;
+  padding: 10px;
+}
+
+.table button {
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+/* Loading Styles */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  color: #6c757d;
+}
+
+/* QR Modal Styles */
+.qr-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.qr-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.qr-modal-content canvas {
+  margin-bottom: 20px;
+}
+
+/* Button Container Styles */
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Add Option Container Styles */
+.add-option-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.add-option-container input {
+  margin-right: 10px; /* Add space between input and button */
+  flex: 1; /* Allow the input to grow and fill space */
+  border-radius: 5px; /* Optional: Add border radius */
+  padding: 10px; /* Optional: Add padding for better appearance */
+  border: 1px solid #ced4da; /* Optional: Customize border */
+}
+
+/* Results Modal Styles */
+.results-modal {
+  background-color: #ffffff; /* White background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the modal */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  text-align: left; /* Align text to the left */
+  width: 90%; /* Responsive width */
+  max-width: 600px; /* Max width */
+  margin: auto; /* Center the modal */
+  position: relative; /* Position relative for close button */
+}
+
+/* Heading Styles for Results */
+.results-modal h3 {
+  text-align: center; /* Center the title */
+  color: #343a40; /* Dark color for the title */
+  margin-bottom: 15px; /* Margin below the title */
+}
+
+/* List Styles for Poll Results */
+.results-modal ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+}
+
+/* List Item Styles */
+.results-modal li {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between name and votes */
+  padding: 10px; /* Padding for each item */
+  border-bottom: 1px solid #e0e0e0; /* Bottom border for separation */
+  font-size: 1.1rem; /* Slightly larger font */
+  color: #495057; /* Darker text color */
+}
+
+/* Close Button Styles */
+.btn-close {
+  display: block; /* Block to center */
+  margin: 20px auto 0; /* Margin around the button */
+  background-color: #007bff; /* Blue background */
+  border: none; /* No border */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding for the button */
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn-close:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Overlay Styles for the Modal */
+.results-modal-overlay {
+  position: fixed; /* Fixed position */
+  top: 0; /* Full height */
+  left: 0; /* Full width */
+  right: 0; /* Full width */
+  bottom: 0; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex; /* Flex for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 1000; /* On top of everything */
+}
+
+/* Highlighted Option Style */
+.highest-vote {
+  background-color: #d4edda; /* Light green background */
+  color: #155724; /* Dark green text */
+  font-weight: bold; /* Make text bold */
+  border-left: 5px solid #28a745; /* Green left border */
+  padding: 5px; /* Add some padding */
+  border-radius: 5px; /* Rounded corners */
+  margin: 5px 0; /* Margin for spacing */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .results-modal {
+    padding: 15px;
+  }
+
+  .option-text {
+    font-size: 1rem;
+  }
+
+  .vote-count {
+    font-size: 0.9rem;
+  }
+
+  .highest-vote-badge {
+    font-size: 0.9rem; /* Adjust badge size for smaller screens */
+  }
+}
+
+.btn-download {
+  background-color: #28a745; /* Green background color */
+  color: white; /* White text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 2px;
+  transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+}
+
+.btn-download:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.btn-download:focus {
+  outline: none; /* Remove outline on focus */
+}
+
+.btn-download:active {
+  transform: scale(0.95); /* Shrink slightly on click */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .Linkcontainer {
+    padding: 5px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn-primary,
+  .btn-warning,
+  .btn-danger {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .table {
+    font-size: 1rem;
+  }
+  .table td,
+  .table th {
+    display: block; /* Ensures each item takes full width */
+    width: 100%; /* Makes the item take full width of the container */
+    overflow: hidden; /* Hides overflow text */
+    text-overflow: ellipsis; /* Displays ellipsis (...) for truncated text */
+    white-space: nowrap; /* Prevents text from wrapping */
+    position: relative;
+  }
+
+  .results-modal {
+    padding: 15px;
+  }
+
+  .option-text {
+    font-size: 1rem;
+  }
+
+  .vote-count {
+    font-size: 0.9rem;
+  }
+
+  .highest-vote-badge {
+    font-size: 0.9rem; /* Adjust badge size for smaller screens */
+  }
+}
